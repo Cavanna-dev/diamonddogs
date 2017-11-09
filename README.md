@@ -1,5 +1,5 @@
-Diamond Api
-===========
+Diamond Dogs
+============
 
 *  [Architecture Hexagonal][1]
 
