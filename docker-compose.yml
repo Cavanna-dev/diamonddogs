@@ -1,0 +1,25 @@
+version: '3.2'
+
+services:
+    web:
+        build: docker/web
+        working_dir: /var/www/html
+        volumes:
+            - .:/var/www/html
+            - ./docker/web/vhost.conf:/etc/apache2/sites-available/000-default.conf:ro
+            - ./docker/web/php.ini:/usr/local/etc/php/php.ini:ro
+        environment:
+            DOMAIN_NAME: api.starter
+            VIRTUAL_HOST: api.starter
+            XDEBUG_CONFIG: remote_host=192.168.99.100
+            WWW_DATA_UID: 1000
+            WWW_DATA_GUID: 1000
+        env_file: .env
+
+    database:
+        image: percona:5.6
+        volumes:
+            - /docker/database:/etc/mysql/conf.d
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: diamondapi
