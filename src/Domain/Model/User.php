@@ -17,8 +17,8 @@ class User
     /**
      * User constructor.
      *
-     * @param int $id
-     * @param string $name
+     * @param UserId   $id
+     * @param UserName $name
      */
     public function __construct(
         UserId $id,
