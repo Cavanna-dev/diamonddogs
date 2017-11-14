@@ -1,5 +1,7 @@
 {
+    "name": "keurbycandy/diamond-dogs",
     "type": "project",
+    "description": "Application running agile tasks",
     "license": "proprietary",
     "require": {
         "php": "^7.0.8",
