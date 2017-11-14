@@ -23,6 +23,10 @@ services:
 
     # controllers are imported separately to make sure they
     # have the tag that allows actions to type-hint services
-    DiamondDogs\Ui\Controller\:
-        resource: '../src/Ui/Controller'
+    DiamondDogs\Application\Controller\:
+        resource: '../src/Application/Controller'
         tags: ['controller.service_arguments']
+
+    DiamondDogs\Domain\Repository\:
+        resource: '../src/Domain/Repository'
+        public: true

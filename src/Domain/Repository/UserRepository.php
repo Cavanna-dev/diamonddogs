@@ -1,6 +1,9 @@
 <?php
 
-namespace DiamondDogs\Domain\Model;
+namespace DiamondDogs\Domain\Repository;
+
+use DiamondDogs\Domain\Model\User;
+use DiamondDogs\Domain\Model\UserId;
 
 interface UserRepository
 {

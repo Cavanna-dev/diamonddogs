@@ -131,48 +131,6 @@
             "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
         }
     },
-    "symfony/polyfill-util": {
-        "version": "v1.6.0"
-    },
-    "symfony/polyfill-php56": {
-        "version": "v1.6.0"
-    },
-    "namshi/jose": {
-        "version": "7.2.3"
-    },
-    "symfony/inflector": {
-        "version": "v3.3.10"
-    },
-    "paragonie/random_compat": {
-        "version": "v2.0.11"
-    },
-    "symfony/polyfill-php70": {
-        "version": "v1.6.0"
-    },
-    "symfony/property-access": {
-        "version": "v3.3.10"
-    },
-    "symfony/security": {
-        "version": "v3.3.10"
-    },
-    "symfony/security-bundle": {
-        "version": "3.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.3",
-            "ref": "85834af1496735f28d831489d12ab1921a875e0d"
-        }
-    },
-    "lexik/jwt-authentication-bundle": {
-        "version": "2.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "2.3",
-            "ref": "751ee6748c1026fa4350c155d1b3a77b7ddca69c"
-        }
-    },
     "sebastian/version": {
         "version": "2.0.1"
     },
