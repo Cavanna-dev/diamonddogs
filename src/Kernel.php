@@ -1,6 +1,6 @@
 <?php
 
-namespace DiamondDogs;
+namespace AgileRetrospective;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;

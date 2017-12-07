@@ -8,14 +8,16 @@
         "phpunit/phpunit": "^6.4",
         "sensio/framework-extra-bundle": "^5.0",
         "symfony/console": "^3.3",
-        "symfony/debug-bundle": "^3.3",
         "symfony/framework-bundle": "^3.3",
-        "symfony/web-server-bundle": "^3.3",
+        "symfony/property-access": "^3.3",
+        "symfony/serializer": "^3.3",
         "symfony/yaml": "^3.3"
     },
     "require-dev": {
         "symfony/flex": "^1.0",
-        "symfony/dotenv": "^3.3"
+        "symfony/dotenv": "^3.3",
+        "symfony/debug-bundle": "^3.3",
+        "symfony/web-server-bundle": "^3.3"
     },
     "config": {
         "preferred-install": {
@@ -25,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DiamondDogs\\": "src/"
+            "\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DiamondDogs\\Tests\\": "tests/"
+            "Tests\\": "tests/"
         }
     },
     "scripts": {

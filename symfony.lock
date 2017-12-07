@@ -238,5 +238,20 @@
             "version": "3.3",
             "ref": "de31e687f3964939abd1f66817bd96ed34bc2eee"
         }
+    },
+    "symfony/serializer": {
+        "version": "v3.3.12"
+    },
+    "symfony/inflector": {
+        "version": "v3.3.12"
+    },
+    "paragonie/random_compat": {
+        "version": "v2.0.11"
+    },
+    "symfony/polyfill-php70": {
+        "version": "v1.6.0"
+    },
+    "symfony/property-access": {
+        "version": "v3.3.12"
     }
 }
