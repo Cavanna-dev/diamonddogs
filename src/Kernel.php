@@ -1,6 +1,6 @@
 <?php
 
-namespace AgileRetrospective;
+namespace app;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;

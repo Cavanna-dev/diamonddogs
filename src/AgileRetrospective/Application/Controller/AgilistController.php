@@ -2,12 +2,12 @@
 
 namespace AgileRetrospective\Application\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use AgileRetrospective\Domain\Repository\InMemoryAgilistRepository;
 
-class AgilistController extends Controller
+class AgilistController
 {
     private $agilistsRepo;
 
