@@ -27,12 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "\\": "src/"
+            "app\\": "src/",
+            "AgileRetrospective\\": "src/AgileRetrospective/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "AgileRetrospective\\": "tests/AgileRetrospective/"
         }
     },
     "scripts": {
