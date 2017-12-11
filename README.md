@@ -12,7 +12,8 @@ Inspirations
 *  [Object Model][4] by Benjamin Eberlei
 *  [Bounded Contexts][5] by Patrick Louys
 *  [Screaming Architecture][6] by Yuriy Zubarev
-*  [SOLID][7] by William Durand
+*  [S.O.L.I.D.][7] by William Durand
+*  [Normalizer / Serializer][8] by Maxime Steinhausser
 
 [1]:  http://williamdurand.fr/2013/08/07/ddd-with-symfony2-folder-structure-and-code-first/
 [2]:  http://williamdurand.fr/2013/06/03/object-calisthenics/#8-no-classes-with-more-than-two-instance-variables
@@ -21,3 +22,4 @@ Inspirations
 [5]:  http://patricklouys.com/2017/04/26/the-importance-of-bounded-contexts/
 [6]:  http://www.yuriy-zubarev.com/blog/2011/12/06/one-and-only-architecture-diagram.html
 [7]:  http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/
+[8]:  https://blog.elao.com/fr/dev/api-design-elao-team-interview/?utm_content=buffer20eb7&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#normalizers-serializers-composant-serializer-de-symfony-ou-jmsserializer
