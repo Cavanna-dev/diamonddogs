@@ -1,6 +1,6 @@
 <?php
 
-namespace AgileRetrospective\Domain\Repository;
+namespace AgileRetrospective\Infrastructure\Repository;
 
 use AgileRetrospective\Domain\Model\Agilist;
 use AgileRetrospective\Domain\Model\AgilistId;
@@ -8,7 +8,11 @@ use AgileRetrospective\Domain\Model\AgilistName;
 
 class InMemoryAgilistRepository implements AgilistRepositoryInterface
 {
+    /** @var array */
     private $agilists;
+
+    /** @var array */
+    private $users;
 
     public function __construct()
     {
