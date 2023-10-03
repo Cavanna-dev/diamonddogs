@@ -2,29 +2,37 @@
 
 namespace AgileRetrospective\Application\Controller;
 
+use AgileRetrospective\Infrastructure\Repository\AgilistRepositoryInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
-use AgileRetrospective\Domain\Repository\InMemoryAgilistRepository;
+use Symfony\Component\Serializer\SerializerInterface;
 
 class AgilistController
 {
-    private $agilistsRepo;
+    /** @var AgilistRepositoryInterface */
+    private $agilistRepository;
 
-    public function __construct(InMemoryAgilistRepository $repo)
+    /** @var SerializerInterface */
+    private $serializer;
+
+    /**
+     * @param AgilistRepositoryInterface $agilistRepository
+     * @param SerializerInterface        $serializer
+     */
+    public function __construct(AgilistRepositoryInterface $agilistRepository, SerializerInterface $serializer)
     {
-        $this->agilistsRepo = $repo;
+        $this->agilistRepository = $agilistRepository;
+        $this->serializer        = $serializer;
     }
 
     /**
      * @Route("/agilists")
      */
-    public function agilists(): Response
+    public function agilist(): Response
     {
-        $users = $this->agilistsRepo->findAll();
+        $users = $this->agilistRepository->findAll();
 
-        return new JsonResponse($users);
+        return JsonResponse::fromJsonString($this->serializer->serialize($users, 'json'));
     }
-
 }

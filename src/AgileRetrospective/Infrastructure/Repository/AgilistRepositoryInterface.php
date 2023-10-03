@@ -1,6 +1,6 @@
 <?php
 
-namespace AgileRetrospective\Domain\Repository;
+namespace AgileRetrospective\Infrastructure\Repository;
 
 use AgileRetrospective\Domain\Model\Agilist;
 use AgileRetrospective\Domain\Model\AgilistId;
